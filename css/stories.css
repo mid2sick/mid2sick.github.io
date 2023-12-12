@@ -1,0 +1,131 @@
+.storyContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.storyBlock {
+    width: 100%;
+    height: 600px;
+    
+    margin: 30px;
+
+    background-color: rgb(12, 53, 94);
+
+    overflow: hidden;
+    position: relative;
+}
+
+.titleBlock {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: gray;
+    text-align: center;
+}
+
+.imageBlock {
+    width: 60%;
+    height: 600px;
+    top: 0%;
+    background-color: purple;
+
+    position: relative;
+    text-align: center;
+    color: white;
+
+    left:40%;
+}
+
+
+.rightTitle {
+    left: 60%;
+}
+
+.leftImage {
+    left: 0%;
+}
+
+div > img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+    filter:brightness(60%);
+}
+
+.introBlock {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    left: 0px;
+    top: 20%;
+    padding: 30px;
+}
+
+.storyName {
+    margin-top: 50%;
+
+    color: white;
+    font-size: 80px;
+}
+
+.detailButton {
+    background-color:#34495e ;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    position: relative;
+    bottom: 0%;
+}
+
+.contentBlock {
+}
+
+.paragraphTitle {
+    padding: 10px 10px 0px 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.storyContent {
+    color: black;
+    font-size: 28px;
+    padding: 20px;
+}
+
+.outLinkButton {
+    background-color:#34495e ;
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    position: relative;
+    top: 30px;
+    right: -50%;
+}
+
+.linkPDF{
+    color: blue;
+    position: absolute;
+    right: 2%;
+}

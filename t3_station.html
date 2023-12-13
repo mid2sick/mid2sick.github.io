@@ -26,13 +26,21 @@
 
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0 sticky-top" style="margin-top:-10%">
         <a href="index.html" class="navbar-brand p-0">
             <h2 class="m-0 text-uppercase text-primary">財團法人基督教</h2>
             <h1 class="m-0 text-uppercase text-primary">聖道兒少福利基金會</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="true">
             <span class="navbar-toggler-icon"></span>
+            <style>
+                /* 使用 filter 屬性改變 Navbar 漢堡圖標的線條顏色 */
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                     /* 使用 invert 屬性將顏色反轉，讓線條呈現黑色 */
+                    filter: invert(1); 
+                }
+            </style>
         </button>
 
         <div class="navbar-collapse collapse show" id="navbarCollapse">
@@ -72,7 +80,7 @@
                             </ul>   </div>
                     </div>
 
-                <a href="donation.html" class="nav-item money rounded-pill btn btn-outline-secondary" style="padding-top: 0.6rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 0.8rem; margin-left: 1rem;margin-top: 5.4%;height:  50%; font-size: 18px;">我要捐款</a>
+                <a href="donation.html" class="nav-item money rounded-pill btn btn-outline-secondary" style="padding-top: 0.6rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 0.8rem; margin-left: 1rem;margin-top: 2%;height:  50%; font-size: 18px;">我要捐款</a>
             </div>
         </div>
     </nav>
@@ -80,36 +88,19 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5"  style="margin-bottom: 90px; position: relative;">
-    <img src="./img/station-banner.jpg" width="100%" height=85%>
-        <div class="container py-5">
-            <div class="row justify-content-start">
-                <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="display-1 text-dark" style="position:absolute; top: 22%; left: 50%; transform: translate(-50%, -50%)">兒少加油站</h1>
-                </div>
-            </div>
-            <div>
-                <h4 style="font-family:'Noto Sans TC', sans-serif;">關於兒少加油站</h4>
-                <h5 style="font-weight: 400;">第一線兒少工作者往往會在陪伴孩童的過程中遇到困難，除了與工作夥伴一起討論解方之外，也需要增能課程提升自己的能力，並與台灣各地的兒少工作者彼此互動討論。
-                <br>聖道兒少加油站希望成為兒少工作者的後援，邀請不同領域的教育專家、兒少服務者擔任講者，舉辦工作坊、講座、分享會，讓兒少工作的發展更加有盼望。</h5>
-            </div>
+    <div class="container-fluid bg-primary py-5"  style="margin-bottom: -5%; position: relative;">
+        <img src="img/station-banner.jpg" width="100%" height=85%>
+        <h1 class="display-1 text-dark" style="position:absolute; top: 33%; left: 50%; transform: translate(-50%, -50%)">兒少加油站</h1>
         </div>
+        <div class="container-fluid bg-primary py-5" style="position:relative; margin-bottom: 5%;">
+        <div class="container py-5">
+            <h4 style="font-family:'Noto Sans TC', sans-serif;">關於兒少加油站</h4>
+            <h5 style="font-weight: 400;">第一線兒少工作者往往會在陪伴孩童的過程中遇到困難，除了與工作夥伴一起討論解方之外，也需要增能課程提升自己的能力，並與台灣各地的兒少工作者彼此互動討論。
+            <br>聖道兒少加油站希望成為兒少工作者的後援，邀請不同領域的教育專家、兒少服務者擔任講者，舉辦工作坊、講座、分享會，讓兒少工作的發展更加有盼望。</h5>
+        </div>
+    </div>
     </div>
     <!-- Hero End -->
-
-
-    <!-- About Start
-    <div class="container-fluid py-5">
-        <div class="container py-5" > 
-            <div class="row gx-0 mb-3 mb-lg-0">
-                <div class="col-lg-6" style="max-width: 100%;">
-                    <div class="bg-primary p-5" >
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-   About End -->
 
 
     <!--目前課程start-->
@@ -118,7 +109,7 @@
             <div class="col-lg-6" style="max-width: 100%;">
                 <div class="bg-primary p-5">
                     <h2 class="display-5 mb-4" >目前課程</h2>
-                    <img src="./img/station-poster.jpg" width="70%" height="70%">
+                    <img src="img/station-poster.jpg" width="70%" height="70%">
                 <div class="container py-5" style="margin-top: -6%;"> 
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbtXh5XoNzFyFpQPf7uE7fVWXZnP01SvnGY-D2uEZSakQqVQ/viewform" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4" target="_blank">我要報名</a>
                 </div>
@@ -126,8 +117,7 @@
         </div>
     </div>
     </div>
-     <!--目前課程end-->
-    
+    <!--目前課程end-->
     
 
     <!--回到訓練學院按鈕start-->
@@ -146,7 +136,7 @@
                         <p class="mb-4 white-text">本會於2011年5月成立，延續計志文牧師關懷弱勢兒少之心志，除了致力聖道兒童之家的安置服務，也透過補助經費與提供兒少工作者訓練，與全國多間兒少社福單位合作，一同深入社區陪伴關懷當地弱勢兒童與青少年。</p>
                 </div>
             <div style="display: flex;">
-                <div class="col-lg-6 col-md-6 white-text">
+                <div class="col-lg-6 col-md-6 col-sm-6 white-text">
                         <h4 class="white-text">聯絡我們</h4>
                         <div class="d-flex flex-column justify-content-start">
                             <p class="mb-2 gray-text"><i class="text-primary me-3 gray-text"></i>● 地址：112022 台北市北投區承德路七段388號1樓</p>
@@ -155,7 +145,7 @@
                             <p class="mb-2 gray-text"><i class="text-primary me-3 gray-text"></i>● 電子郵件：hwch.service@hwcyf.org</p>
                         </div>
                 </div>    
-                <div class="col-lg-3 col-md-6 white-text">
+                <div class="col-lg-3 col-md-3 col-sm-3 white-text">
                     <h4 class="white-text">公開資訊</h4>
                     <div class="d-flex flex-column justify-content-start gray-text">
                             <a class="text-light mb-2 gray-text"><i class="fa fa-angle-right me-2"></i>年度報告</a>
@@ -164,7 +154,7 @@
                             <a class="text-light mb-2 gray-text"><i class="fa fa-angle-right me-2"></i>隱私權政策</a>                  
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 white-text">
+                <div class="col-lg-3 col-md-3 col-sm-3 white-text">
                     <h4 class="white-text">常見問題</h4>
                     <div class="d-flex flex-column justify-content-start gray-text">
                         <a class="text-light mb-2 gray-text"><i class="fa fa-angle-right me-2"></i>【重要】防詐騙提醒</a>
@@ -175,7 +165,7 @@
             
                 <div class="col-lg-3 col-md-6" style="display: inline-block;">
                     <h4 class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">訂閱電子報</h4>
-                    <a href="https://www.facebook.com/hwcyf.org.tw/" target="_blank" class="btn btn-secondary btn-lg-square rounded-circle me-2"><i class="fa fa-facebook-official fa-2x"></i></a>
+                    <a href="https://www.facebook.com/hwcyf.org.tw/" target="_blank"class="btn btn-secondary btn-lg-square rounded-circle me-2"><i class="fa fa-facebook-official fa-2x"></i></a>
                     <a href="https://www.youtube.com/channel/UCRHNNtZLqghnZqZbmCU4Sbw" target="_blank" class="btn btn-secondary btn-lg-square rounded-circle"><i class="fa fa-youtube-square fa-2x"></i></a>
                 </div>
                 <div class="col-md-6 text-center text-md-start">
@@ -191,9 +181,9 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up fa-x"></i></a>
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up fa-x"></i></a>
 
-
+    
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -205,3 +195,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
